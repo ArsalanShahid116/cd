@@ -55,7 +55,7 @@ $ vi backend/settings.py
         'django.contrib.sessions',
         'django.contrib.messages',
         'django.contrib.staticfiles',
-        'cdEditor' # add this 
+        'cdEditor' 
       ]
 
 Setting up react as frontend
