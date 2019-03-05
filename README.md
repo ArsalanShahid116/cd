@@ -1,4 +1,4 @@
-# cd: Towards Eleveting Programming Productivity
+# cd: Towards Elevating Programming Productivity
 
 ## Settingup Skelton project for cd
 
