@@ -2,14 +2,14 @@
 
 ## Settingup Skelton project for cd
 
-Git setup 
+Git Setup 
 =========
 
 $ sudo apt-get install git <br/>
 $ git config --global user.name "AIProjectZero" <br/>
 $ git config --global user.email aiprojectzo@gmail.com <br/>
 
-Clone cd project
+Clone cd Project
 ================
 
 $ git clone https://github.com/AIProjectZero/cd.git <br/>
