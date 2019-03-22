@@ -15,16 +15,14 @@ Clone cd Project
 $ git clone https://github.com/AIProjectZero/cd.git <br/>
 $ cd cd/ <br/>
 
-Create a virtualenv using Pipenv 
-================================
+Create a virtualenv
+====================
 
 Prerequisites 
 -------------
-1) pip
-2) pipenv 
-3) python 
 
-$ pipenv shell <br/>
+$ virtualenv env <br/>
+$ source env/bin/activate <br/>
 
 Setting up a Django as backend
 ==============================
