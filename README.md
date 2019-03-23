@@ -1,6 +1,6 @@
 # cd: Towards Elevating Programming Productivity
 
-## Settingup Skelton project for cd
+## Settingup Skelton project for cd test
 
 Git Setup 
 =========
