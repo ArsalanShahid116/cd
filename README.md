@@ -1,22 +1,30 @@
-# cd: Towards Elevating Programming Productivity
+# cd: Towards Eleveting Programming Productivity
 
 ## Settingup Skelton project for cd
 
-Git Setup 
+Git setup 
 =========
 
 $ sudo apt-get install git <br/>
 $ git config --global user.name "AIProjectZero" <br/>
 $ git config --global user.email aiprojectzo@gmail.com <br/>
 
-Clone cd Project
+Clone cd project
 ================
 
 $ git clone https://github.com/AIProjectZero/cd.git <br/>
 $ cd cd/ <br/>
 
-$ virtualenv \<env>\
-$ source \<env>/bin/activate
+Create a virtualenv using Pipenv 
+================================
+
+Prerequisites 
+-------------
+1) pip
+2) pipenv 
+3) python 
+
+$ pipenv shell <br/>
 
 Setting up a Django as backend
 ==============================
