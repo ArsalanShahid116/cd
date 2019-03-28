@@ -464,8 +464,8 @@ class cdEditor extends Component {
           <AceEditor
             mode={this.state.mode}
             theme={this.state.theme}
-            height={430}
-            width={1100}
+            height={"600px"}
+            width={'100%'}
             name="blah2"
             onLoad={this.onLoad}
             onChange={this.onChange}

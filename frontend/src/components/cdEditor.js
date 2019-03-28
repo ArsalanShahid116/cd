@@ -204,7 +204,7 @@ class cdEditor extends Component {
   refreshList = () => {
     axios
       .get("http://localhost:8000/api/program/")
-      .then(res => this.setState({ programList: res.data }))
+      .then(res => this.setState({ programList: res.data, value: defaultValue, title: "", description: "" }))
       .catch(err => console.log(err));
   };
 
@@ -382,7 +382,7 @@ class cdEditor extends Component {
           </DialogContent>
           <DialogActions>
             <Button onClick={this.handleCloseAppearance} color="primary">
-              Save
+              OK
               </Button>
           </DialogActions>
         </Dialog>
@@ -404,7 +404,7 @@ class cdEditor extends Component {
           open={this.state.openprogram}
           onClose={this.handleCloseProgram}
         >
-          <DialogTitle>Create New Program</DialogTitle>
+          <DialogTitle>Program</DialogTitle>
           <DialogContent>
             <form>
               <div>
@@ -455,7 +455,7 @@ class cdEditor extends Component {
           </DialogContent>
           <DialogActions>
             <Button onClick={this.handleCloseProgram} color="primary">
-              Save
+              OK
               </Button>
           </DialogActions>
         </Dialog>
@@ -464,8 +464,8 @@ class cdEditor extends Component {
           <AceEditor
             mode={this.state.mode}
             theme={this.state.theme}
-            height={430}
-            width={1100}
+            height={'80vh'}
+            width={'100%'}
             name="blah2"
             onLoad={this.onLoad}
             onChange={this.onChange}
