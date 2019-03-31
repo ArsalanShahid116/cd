@@ -1,39 +1,41 @@
 import React, { Component } from 'react';
-import 'antd/dist/antd.css';
-import BaseRouter from './routes';
-import {BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { connect } from 'react-redux';
-import CustomLayout from './containers/Layout';
+import BaseRouter from './routes';
+import 'antd/dist/antd.css';
 import * as actions from './store/actions/auth';
 
+import CustomLayout from './containers/Layout';
+
 class App extends Component {
-  componentsDidMount() {
-  	this.props.onTryAutoSignup();
+
+  componentDidMount() {
+    this.props.onTryAutoSignup();
   }
 
   render() {
     return (
-	    <div>
-	            <Router>
-	              <CustomLayout {...this.props}>
-	                  <BaseRouter />
-	              </CustomLayout>
-	            </Router>
-	    </div>
-      );
-    }
+      <div>
+        <Router>
+          <CustomLayout {...this.props}>
+              <BaseRouter />
+          </CustomLayout>
+        </Router>
+      </div>
+    );
+  }
 }
 
 const mapStateToProps = state => {
-	return {
-		isAuthenticated: state.token !== null
-	}
+  return {
+    isAuthenticated: state.token !== null
+  }
 }
 
 const mapDispatchToProps = dispatch => {
-	return {
-		onTryAutoSignUp: () => dispatch(actions.authCheckState())
-	}
+  return {
+    onTryAutoSignup: () => dispatch(actions.authCheckState())
+  }
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
