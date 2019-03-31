@@ -24,5 +24,8 @@ router.register(r'program', views.programView, 'program')     # add this
 
 urlpatterns = [
             url('admin/', admin.site.urls),
-            url('api/', include(router.urls))
+            url('api/', include(router.urls)),
+            url('api-auth/', include('rest_framework.urls')),
+            url('rest-auth/registration/', include('rest_auth.registration.urls')),
+            url('rest-auth/', include('rest_auth.urls'))
             ]
