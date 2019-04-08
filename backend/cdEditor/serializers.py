@@ -4,6 +4,6 @@ from .models import program
 class programSerializer(serializers.ModelSerializer):
     class Meta:
         model = program
-        fields = ('id', 'language', 'title', 'description', 'code', 'commandLineArgs')
+        fields = ('owner', 'id', 'language', 'title', 'description', 'code', 'commandLineArgs')
 
 

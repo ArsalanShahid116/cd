@@ -6,11 +6,11 @@ from django.shortcuts import render
 # Create your views here.
 
 from django.shortcuts import render
-from rest_framework import viewsets          # add this
-from .serializers import programSerializer      # add this
-from .models import program                  # add this
+from rest_framework import viewsets          
+from .serializers import programSerializer   
+from .models import program                  
 
-class programView(viewsets.ModelViewSet):     # add this
-    serializer_class = programSerializer        # add this
-    queryset = program.objects.all()            # add this
+class programView(viewsets.ModelViewSet):    
+    serializer_class = programSerializer     
+    queryset = program.objects.all()         
 
